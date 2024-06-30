@@ -3,13 +3,13 @@ import React from 'react';
 
 const SkillsChart = () => {
   const skills = [
-    { category: 'Frontend Development', skills: [{ name: 'HTML', level: 80 }, { name: 'CSS', level: 50 }, { name: 'JavaScript', level: 70 } ,{ name: 'TailwindCSS', level: 60 },{ name: 'React', level: 85 } ] },
-    { category: 'Backend Development', skills: [{ name: 'Node', level: 40 }, { name: 'Express', level: 60 }, { name: 'SQL', level: 80 }, { name: 'PHP', level: 70 }] , experience:1},
-    { category: 'QA Engineer', skills: [{ name: 'Postman', level: 30 }, { name: 'Selenium', level: 40 }, { name: 'Manual Testing', level:25 }, { name: 'Jira', level: 35 }],  },
+    { category: 'Frontend Development', skills: [{ name: 'HTML', level: 80 }, { name: 'CSS', level: 50 }, { name: 'JavaScript', level: 60 } ,{ name: 'React', level: 65 }, {name: 'ASP.NET MVC' , level:70 } ] },
+    { category: 'Backend Development', skills: [{ name: 'Web API', level: 50 }, { name: 'Fluent API', level: 60 }, { name: 'Entity Frameword', level: 60 }, { name: 'LINQ', level: 70 }] , experience:1},
+    { category: 'Database', skills: [{ name: 'MySQL', level: 55 }, { name: 'PostgreSqL', level: 40 }]}
   ];
 
   return (
-    <section id= "skills" className='h-full'>
+    <section id= "skills" className='h-full '>
     <h1 className="my-4 text-center font-bold text-4xl">
     My Skills
     <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>

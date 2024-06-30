@@ -29,7 +29,7 @@ const HeroSection = () => {
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold ">
-              Full Stack .NET Developer{" "}
+              Full Stack Web Developer{" "}
             </span>
 
           </p>

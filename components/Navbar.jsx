@@ -24,10 +24,7 @@ const NAV_ITEMS = [
     label :"Skills",
     page: "skills"
   },
-  {
-    label: "Projects",
-    page: "projects",
-  },
+ 
   {
     label: "Contact",
     page: "contact",
@@ -47,11 +44,9 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link to="home">
               <div className="container flex items-center space-x-2">
-              
                 <h2 className="text-2xl font-bold cursor-pointer">Narayan Dhungel</h2>
               </div>
             </Link>
-           
             <div className="flex items-center space-x-2 md:hidden">
         {currentTheme === "dark" ? (
           <button onClick={() => setTheme("light")} className="bg-slate-100 p-2 rounded-xl">
@@ -59,7 +54,7 @@ export default function Navbar() {
           </button>
         ) : (
           <button onClick={() => setTheme("dark")} className="bg-slate-100 p-2 rounded-xl">
-            <RiMoonFill size={20} />
+            <RiMoonFill size={20} /> 
           </button>
         )}
         <button className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border" onClick={() => setNavbar(!navbar)}>
@@ -107,7 +102,7 @@ export default function Navbar() {
                   onClick={() => setTheme("dark")}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiMoonFill size={20} />
+                  <RiMoonFill size={20} /> 
                 </button>
               )}
             </div>
@@ -118,30 +113,4 @@ export default function Navbar() {
   )
 }
 
-{/* <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-[#f8f8f8] dark:bg-stone-900 dark:border-b dark:border-stone-600 opacity-[0.98]">
-  <div className="justify-between md:items-center md:flex">
-    <div className="flex items-center justify-between py-3 md:py-5 md:block">
-      <Link to="home">
-        <div className="container flex items-center space-x-2">
-          <h2 className="text-2xl font-bold cursor-pointer">Narayan Dhungel</h2>
-        </div>
-      </Link>
-      <div className="flex items-center space-x-2 md:hidden">
-        {currentTheme === "dark" ? (
-          <button onClick={() => setTheme("light")} className="bg-slate-100 p-2 rounded-xl">
-            <RiSunLine size={20} color="black" />
-          </button>
-        ) : (
-          <button onClick={() => setTheme("dark")} className="bg-slate-100 p-2 rounded-xl">
-            <RiMoonFill size={20} />
-          </button>
-        )}
-        <button className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border" onClick={() => setNavbar(!navbar)}>
-          {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
-        </button>
-      </div>
-    </div>
-    ...
-  </div>
-</header> */}
 
